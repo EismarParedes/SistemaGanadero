@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_animales"
+            android:icon="@drawable/animales"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_praderas"
+            android:icon="@drawable/pradera"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_produccion"
+            android:icon="@drawable/produccion"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_nomina"
+            android:icon="@drawable/nomina"
+            android:title="@string/menu_share" />
+    </group>
+
+    <item android:title="Administracion">
+        <menu>
+            <item
+                android:id="@+id/nav_admuser"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_send" />
+            <item
+                android:id="@+id/nav_pass"
+                android:icon="@drawable/passw"
+                android:title="@string/menu_pass" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Ganado</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="animales">Animales</string>
+    <string name="title_activity_drawer_navig">DrawerNavig</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Sistema Ganadero</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_perfil">Perfil</string>
+    <string name="action_logt">Salir</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Animales</string>
+    <string name="menu_slideshow">Praderas</string>
+    <string name="menu_tools">Produccion</string>
+    <string name="menu_share">Nomina</string>
+    <string name="menu_send">Administrar usuarios</string>
+    <string name="menu_pass">Cambiar contraseña</string>
+
+</resources>
