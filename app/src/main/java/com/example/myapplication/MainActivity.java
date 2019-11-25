@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button boton;
+    private Button boton;
+    private EditText usernameValidator;
+    private EditText passwordValidator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
                 openNextAct();
             }
         });
+
+        usernameValidator = (EditText)findViewById(R.id.editText_user);
+        if(usernameValidator.getText().toString().length() == 0){
+            usernameValidator.setError("Nombre de usuario requerido");
+        }
+
+        passwordValidator = (EditText)findViewById(R.id.editText_pass);
+        if(passwordValidator.getText().toString().length() == 0){
+            passwordValidator.setError("Contraseña requerida");
+        }
+
     }
 
     private void openNextAct() {

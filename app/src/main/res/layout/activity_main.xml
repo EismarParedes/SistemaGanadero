@@ -11,10 +11,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="90dp"
         app:srcCompat="@drawable/ganado" />
 
     <EditText
@@ -45,7 +44,7 @@
         android:id="@+id/button_open_home"
         android:layout_width="160dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@color/primaryColor"
         android:textColor="@color/secondaryTextColor"
         android:text="@string/ingresar"/>
