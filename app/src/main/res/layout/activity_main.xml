@@ -7,41 +7,47 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="#DFDFDF">
+    android:background="#E7E7E7">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="160dp"
-        android:layout_height="189dp"
+        android:layout_height="160dp"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         app:srcCompat="@drawable/ganado" />
 
     <EditText
         android:id="@+id/editText_user"
-        android:layout_width="190dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:paddingLeft="2dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="4dp"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/user"
+        android:drawableRight="@drawable/user"
+        android:inputType="textEmailAddress"
         android:hint="@string/usuario" />
 
     <EditText
         android:id="@+id/editText_pass"
-        android:layout_width="190dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/pass"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:drawableRight="@drawable/pass"
+        android:inputType="textPassword"
         android:hint="@string/contrase" />
 
     <Button
         android:id="@+id/button_open_home"
-        android:layout_width="190dp"
+        android:layout_width="160dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/secondaryLightColor"
-        android:text="@string/ingresar"
-        />
+        android:layout_marginTop="30dp"
+        android:background="@color/primaryColor"
+        android:textColor="@color/secondaryTextColor"
+        android:text="@string/ingresar"/>
 
 </LinearLayout>

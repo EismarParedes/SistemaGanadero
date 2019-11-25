@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,42 +14,46 @@
          android:layout_width="match_parent"
          android:layout_height="match_parent"
          android:hint="Nombre"
-         android:inputType="text"/>
+         android:inputType="textPersonName"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
         android:id="@+id/Spinner_sexAnim"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingTop="10dp" />
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"/>
 
     <Spinner
         android:id="@+id/Spinner_stateAnim"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingTop="10dp"/>
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Fecha de nacimiento"
-            android:inputType="datetime"/>
+            android:inputType="date" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Peso Destete"
+            android:hint="Peso"
             android:inputType="number"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -58,19 +61,32 @@
     <Spinner
         android:id="@+id/Spinner_razaAnim"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingTop="10dp"/>
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"/>
 
     <Spinner
         android:id="@+id/Spinner_colorAnim"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingTop="10dp"/>
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar">
-        </Button>
+    <Button
+        android:id="@+id/registroGanadoSucces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:background="@color/primaryColor"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/secondaryTextColor"/>
 
+    <Button
+        android:id="@+id/registroGanadoCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:background="@color/cancelButton"
+        android:textColor="@color/secondaryTextColor"/>
 </LinearLayout>

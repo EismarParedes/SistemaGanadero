@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        boton = (Button)findViewById(R.id.button_open_home);
+        boton = findViewById(R.id.button_open_home);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void openNextAct() {
         Intent intent = new Intent(this, DrawerNavig.class);
+        Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
 }

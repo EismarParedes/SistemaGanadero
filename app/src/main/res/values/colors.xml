@@ -8,5 +8,6 @@
     <color name="secondaryDarkColor">#003300</color>
     <color name="primaryTextColor">#000000</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="cancelButton">#F34242</color>
     <color name="text_shadow">#7F000000</color>
 </resources>
