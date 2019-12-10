@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "864633409032",
+    "firebase_url": "https://sistema-ganadero.firebaseio.com",
+    "project_id": "sistema-ganadero",
+    "storage_bucket": "sistema-ganadero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864633409032:android:ae3b68d25910ec0b6e4bbd",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864633409032-vsg71ruqs8cn21tgd7p2o4cbfp0ol869.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "2d612d266f65945ea8c6f26da2d7bd375c2621cf"
+          }
+        },
+        {
+          "client_id": "864633409032-quok14ratp0900t3a6tutal5e7d5l8rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCef0t6-_-5feJ6gNwF42N5hMjKKomCAEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864633409032-quok14ratp0900t3a6tutal5e7d5l8rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

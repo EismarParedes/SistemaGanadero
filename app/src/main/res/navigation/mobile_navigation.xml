@@ -13,21 +13,15 @@
 
     <fragment
         android:id="@+id/nav_animales"
-        android:name="com.example.myapplication.ui.animales.AnimalesFragment"
+        android:name="com.example.myapplication.ui.animales.animalesHomeFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_animales" />
+        tools:layout="@layout/fragment_animales_home" />
 
     <fragment
         android:id="@+id/nav_praderas"
         android:name="com.example.myapplication.ui.praderas.PraderasFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_praderas" />
-
-    <fragment
-        android:id="@+id/nav_produccion"
-        android:name="com.example.myapplication.ui.produccion.ProduccionFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_produccion" />
 
     <fragment
         android:id="@+id/nav_nomina"

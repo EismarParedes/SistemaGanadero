@@ -17,10 +17,6 @@
             android:icon="@drawable/pradera"
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/nav_produccion"
-            android:icon="@drawable/produccion"
-            android:title="@string/menu_tools" />
-        <item
             android:id="@+id/nav_nomina"
             android:icon="@drawable/nomina"
             android:title="@string/menu_share" />

@@ -60,7 +60,8 @@ public class AdmUserFragment extends Fragment {
     private void initspinnerfooter() {
         String[] permisos = new String[]{"Seleccione un permiso", "Administrador", "Gerente", "Almacen                                                             "};
 
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, permisos);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item,
+                permisos);
         spinnerpermisos.setAdapter(adaptador);
         spinnerpermisos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

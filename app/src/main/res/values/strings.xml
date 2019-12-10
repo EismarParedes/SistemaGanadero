@@ -23,4 +23,14 @@
     <string name="menu_send">Administrar usuarios</string>
     <string name="menu_pass">Cambiar contraseña</string>
 
+    <string name="user_name">Nombre: </string>
+    <string name="user_email">Email: </string>
+    <string name="user_tel">Telefono: </string>
+    <string name="user_permis">Permisos: </string>
+    <string name="user_status">Estado: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

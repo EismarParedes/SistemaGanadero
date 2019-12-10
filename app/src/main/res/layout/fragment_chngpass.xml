@@ -4,17 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoCurrent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Contraseña"
+            android:hint="Ingrese su contraseña actual"
             android:inputType="text"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -22,9 +24,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoContraNew"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Ingrese nueva contraseña"
@@ -35,19 +38,20 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoContraConf"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Repetir nueva contraseña"
+            android:hint="Confirme su nueva contraseña"
             android:inputType="text"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/chngpassSucces"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Guardar"
