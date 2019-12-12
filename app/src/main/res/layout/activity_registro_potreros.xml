@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAreaPotrero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Area"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCapacidadPotrero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Capacidad"
+            android:inputType="textPersonName"/>
+
+        <Spinner
+            android:id="@+id/Spinner_statePotrero"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_background"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtObservacionPotrero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Observacion"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registroPotreroSucces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:background="@color/primaryColor"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/secondaryTextColor"/>
+
+    <Button
+        android:id="@+id/registroPotreroCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:background="@color/cancelButton"
+        android:textColor="@color/secondaryTextColor"/>
+
+</LinearLayout>

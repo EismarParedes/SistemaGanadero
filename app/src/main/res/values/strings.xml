@@ -29,6 +29,8 @@
     <string name="user_permis">Permisos: </string>
     <string name="user_status">Estado: </string>
 
+    <string name="content_float">Agregar Nuevo</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

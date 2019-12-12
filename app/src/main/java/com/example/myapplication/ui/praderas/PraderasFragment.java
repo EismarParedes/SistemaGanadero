@@ -1,35 +1,57 @@
 package com.example.myapplication.ui.praderas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
+import com.example.myapplication.DrawerNavig;
 import com.example.myapplication.R;
 
 public class PraderasFragment extends Fragment {
 
-    private PraderasViewModel praderasViewModel;
+    private CardView cardAforo;
+    private CardView cardPotrero;
+    private CardView cardVegetales;
+
+    public PraderasFragment(){
+        // Required empty public constructor
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        praderasViewModel =
-                ViewModelProviders.of(this).get(PraderasViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_praderas, container, false);
-        final TextView textView = root.findViewById(R.id.text_praderas);
-        praderasViewModel.getText().observe(this, new Observer<String>() {
+
+        View rootView = inflater.inflate(R.layout.fragment_praderas, container, false);
+        cardAforo = rootView.findViewById(R.id.aforosCard);
+        cardPotrero = rootView.findViewById(R.id.potrerosCard);
+        cardVegetales = rootView.findViewById(R.id.vegetalesCard);
+
+        cardAforo.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), DatosAforos.class));
             }
         });
-        return root;
+
+        cardPotrero.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), DatosPotreros.class));
+            }
+        });
+
+        cardVegetales.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), DatosVegetales.class));
+            }
+        });
+
+        return rootView;
     }
 }
