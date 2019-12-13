@@ -4,6 +4,10 @@ NOTA: A partir de la fecha: 22/11/2019 TODOS los cambios realizados al repositor
 
 Para arreglar los problemas que sucedan con las dependencias o en ejecución:
 
+Eliminar el archivo signing-config.json
+
+dentro de la ruta: SistemaGanadero\app\build\intermediates\signing_config\debug\out\signing-config.json
+
 -Usar Clean & Build
 ó
 -Seleccionar File --> Invalidate caches / Restart --> Invalidate & Restart
